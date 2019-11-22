@@ -1,0 +1,17 @@
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/config/SecurityConfiguration.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/model/Role.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/controller/CustomerController.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/repository/UserRepository.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/service/impl/UserServiceImpl.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/service/UserService.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/repository/CustomerRepository.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/model/Customer.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/service/CustomerService.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/controller/LoginController.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/config/WebMvcConfig.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/model/Views.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/model/User.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/repository/RoleRepository.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/controller/HealthController.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/controller/SimpleEmailController.java
+/Users/andrey/eclipse-workspace/SpringCustomer/src/main/java/com/company/SpringCustomerApplication.java

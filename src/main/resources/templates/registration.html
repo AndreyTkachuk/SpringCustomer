@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Spring Customer</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/registration.css}" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	
+  	
+</head>
+<header style="background-color: #808080;  height: 80px; width: 100%">  
+      <h1 style="font-size: 40px; color: white;text-align: center; padding-top: 15px;">Spring <img th:src="@{/images/globe-icon.png}" />  Customer</h1> 
+</header>
+<body>
+<br/>
+<div align="center">
+	<form th:action="@{/}" method="get">
+		<button class="btn btn-secondary active" type="Submit"><h4>Go To Login Page</h4></button>
+	</form>	
+	</div>
+	<br/>
+		<div class="row" align="center">
+			<div class="col-md-6 col-md-offset-3">
+				<form autocomplete="off" action="#" th:action="@{/registration}"
+					th:object="${user}" method="post" class="form-horizontal"
+					role="form">
+					<h2>Registration Form</h2>
+					<div class="form-group" align="center">
+						<div class="col-sm-9">
+						<label th:if="${#fields.hasErrors('name')}" th:errors="*{name}"
+								class="validation-message"></label>
+						<input type="text" th:field="*{name}" placeholder="Name"
+								class="form-control" /> 
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-9">
+						<label	th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"
+								class="validation-message"></label>
+							<input type="text" th:field="*{lastName}"
+								placeholder="Last Name" class="form-control" /> 
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-9">
+							<input type="text" th:field="*{email}" placeholder="Email"
+								class="form-control" /> <label
+								th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
+								class="validation-message"></label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-9">
+							<input type="password" th:field="*{password}"
+								placeholder="Password" class="form-control" /> <label
+								th:if="${#fields.hasErrors('password')}" th:errors="*{password}"
+								class="validation-message"></label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-9">
+							<button type="submit" class="btn btn-primary btn-block">Register User</button>
+						</div>
+					</div>
+					
+					<span th:utext="${successMessage}"></span>
+					
+					
+				</form>
+			</div>
+		</div>
+	
+
+</body>
+<br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+<footer class="page-footer font-small special-color-dark pt-4">
+
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://Company.com/education/bootstrap/"> Company.com</a>
+  </div>
+</footer>
+</html>
